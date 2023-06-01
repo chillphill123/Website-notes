@@ -16,3 +16,5 @@ def create_app():
 # secure cookies and session data related to the website. String 'secretkey' is the secret key for our app
 app.config['SECRET_KEY'] = 'secretkey'
 
+Routing(routes): is the mechanism of mapping the URL directly to the code that creates the webiste.
+
