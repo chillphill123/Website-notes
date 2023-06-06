@@ -1,20 +1,57 @@
-Created a python package called 'Website'.
+creating Website with Anvil
+
+Anvil is a website that allows us to create a E commerce website using pyhton code more easily.
+
+Anvil allows us to use a drag and drop editor that allows us to create out custom HTML
+
+HTML: is code that is used to structure a web page.
+
+Anvil has a propertys tab that allows us to change the name of stuff, its role, its layout, icon, and a lot more.
+
+class Form1(Form1Template):
+
+  def __init__(self, **properties):
+
+    # Set Form properties and Data Bindings.
+
+    self.init_components(**properties)
+
+
+
+    # Any code you write here will run before the form opens.
+    
+this is the front end code that allows us to change stuff in the propertys stuff, as mentioned above.
+
+to change propertys in anvil we can for example, go to coding tab, and then do self.variable_name.text = 'our new name'
+which then changes the name of the thing we wanna alter.
+
+back end of code: code that allows the website to be running
+
+front end code: what the user will see.
+
+data tab: allows us to store users, or just in general data that we will have
+
+Adming page of website will rendrer all other pages in the website
+
+link 3 and link 2 on the top right screen because we want it to show if user is sighne in or not, and a option to view whats in his cart
+
+
+link 1 would be the title of the website
+
+
+HOME PAGE
+
+wil be rendered in base page
 
 
 
 
 
-Flask: an easy to use web application, and easy to use framework within python. I will be using flask to create the website. 
 
-# setting up flask
-from flask import Flask
 
-def create_app():
-    app = Flask(__name__)
-    # __name__ holds the name of the file being ran.
 
-# secure cookies and session data related to the website. String 'secretkey' is the secret key for our app
-app.config['SECRET_KEY'] = 'secretkey'
 
-Routing(routes): is the mechanism of mapping the URL directly to the code that creates the webiste.
+
+
+
 
