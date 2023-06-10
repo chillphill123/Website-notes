@@ -47,6 +47,18 @@ ghgu
 
 format of the main page will include 3 images, two of them being the product for sale, (shorts and pants), and of them being just image beside the description of the brand and how it came to be.
 
+git hub allows u to customize the way your website looks by dragging and dropping where text is, images are, and more. Essentially orgnizing and desighing the way your front end code looks.
+
+To render home page into base page(which will have everything we can, us the: self.content_panel.add_component(Home()).
+We also need to add from ..Home import Home so that the code actually renders.
+ 
+ 
+ 
+MAKING THE BUTTONS WORK.
+
+the page "shopping" will be the page that allows us to view the clothes. the page will be storing all the data of the clothes available and then rendering them into the home page.
+
+
 
 
 
