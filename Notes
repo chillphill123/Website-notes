@@ -129,10 +129,21 @@ VIEW CLOTHES PAGE
     
    - every file or form has a class. Ex: class Base(). this class represent the page we are seeing. 
    
-   - If we want to treat a page as a component, we need to make in instance of that class. Which is why we have .. Home.
+   - If we want to treat a page as a component, we need to make in instance of that class. Which is why we have .. Home (Instance of home).
+   
+   
+   
+   CART
+   
+   - same as the above thing just with the propertys of the 'Cart' button
+   
    
    
     SIGN IN/SIGN OUT
+    
+    - super simple with anvil
+    
+    
     
     
    
