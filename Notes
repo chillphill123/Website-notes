@@ -36,29 +36,77 @@ Adming page of website will rendrer all other pages in the website
 link 3 and link 2 on the top right screen because we want it to show if user is sighne in or not, and a option to view whats in his cart
 
 
-link 1 would be the title of the website
+
+BASE PAGE
+
+- this page will render other pages inside of it.
+
+- content_panel is where the main content of our webisite will be
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 HOME PAGE
 
-wil be rendered in base page
+-Wil be rendered in base page
 
-ghgu
+-With anvil we can customize the way we want out home page to look. For example, for my home page I have the title, a button that will take us to view clothes, as well as the brand logo.
 
-format of the main page will include 3 images, two of them being the product for sale, (shorts and pants), and of them being just image beside the description of the brand and how it came to be.
+-With Anvil we can also change the name of our text boxes, or images in order to keep more organized.
 
-git hub allows u to customize the way your website looks by dragging and dropping where text is, images are, and more. Essentially orgnizing and desighing the way your front end code looks.
+# Rendering home page within base page
+# Is done within base file
 
-To render home page into base page(which will have everything we can, us the: self.content_panel.add_component(Home()).
-We also need to add from ..Home import Home so that the code actually renders.
+self.content_panel.add_component(Home())
+
+# adding home file into our main content panel.
+
+# For this line of code to work we also need to add in: from ..Home import Home. So we can actually use the home component.
+
+
+
  
  
  
-MAKING THE BUTTONS WORK.
+ 
+VIEW CLOTHES PAGE (MAIN PAGE)
 
-the page "shopping" will be the page that allows us to view the clothes. the page will be storing all the data of the clothes available and then rendering them into the home page.
+- Approach: add data about our clothes (creating the clothes that will be sold), and then making it so our base page will render each course from this file and present it, within the base page.
 
+- To make button work we can look at its propertys and customize what we want the button to do, based on the method anvil automatically creates for us.
+ 
+ # Method that anvil gives us:
+ 
+ def view_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    pass
 
+# can customize what we want to happen when the button is clicked.
+
+- when the button is clicked a method will be called that clears the content panel of our home page, and then adds in our clothes.
+
+- To do this we need to create a new content_panel (add our components from our home page in there), and then clear the content_panel and render the Clothes file within it. As the home page is already rendered within the base page.
+
+# CODE
+ 
+ def view_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    self.content_panel.clear()
+    self.content_panel.add_component(Clothes())
+    
+    # also need 'from ..Clothes import Clothes' so that the method can actually add the clothes file.
 
 
 
