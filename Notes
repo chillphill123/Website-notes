@@ -124,6 +124,19 @@ VIEW CLOTHES PAGE
     
    - Home is already imported therefore we wont need to do it again.
    
+   
+    PARANTHESIS OF THE ..HOME IMPORT HOME
+    
+   - every file or form has a class. Ex: class Base(). this class represent the page we are seeing. 
+   
+   - If we want to treat a page as a component, we need to make in instance of that class. Which is why we have .. Home.
+   
+   
+    SIGN IN/SIGN OUT
+    
+    
+   
+   
   
   
   
