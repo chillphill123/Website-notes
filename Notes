@@ -81,7 +81,7 @@ self.content_panel.add_component(Home())
  
  
  
-VIEW CLOTHES PAGE (MAIN PAGE)
+VIEW CLOTHES PAGE 
 
 - Approach: add data about our clothes (creating the clothes that will be sold), and then making it so our base page will render each course from this file and present it, within the base page.
 
@@ -97,7 +97,7 @@ VIEW CLOTHES PAGE (MAIN PAGE)
 
 - when the button is clicked a method will be called that clears the content panel of our home page, and then adds in our clothes.
 
-- To do this we need to create a new content_panel (add our components from our home page in there), and then clear the content_panel and render the Clothes file within it. As the home page is already rendered within the base page.
+- To do this we need to create a new content_panel (add our components from our home page in there), and then clear the content_panel and render the Clothes file within it. 
 
 # CODE
  
@@ -107,6 +107,26 @@ VIEW CLOTHES PAGE (MAIN PAGE)
     self.content_panel.add_component(Clothes())
     
     # also need 'from ..Clothes import Clothes' so that the method can actually add the clothes file.
+    
+  
+  GOING BACK TO HOME PAGE BUTTON
+  
+  - very similar to thing above. Essentially what we need to do is go got the propertys of the 'WAJED CLOTHING' button at the top right corner, and alter the method that is ran when its clicked.
+  
+  - in this method we will simply just clear the content_panel, and the render the home page yet again within it.
+  
+  # Code
+  
+   def title_click(self, **event_args):
+    """This method is called when the link is clicked"""
+    self.content_panel.clear()
+    self.content_panel.add_component(Home())
+    
+   - Home is already imported therefore we wont need to do it again.
+   
+  
+  
+  
 
 
 
