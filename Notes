@@ -207,6 +207,57 @@ VIEW CLOTHES PAGE
      
      - also created a new function that clears the content_panel and adds in the home page (will be very usefull)
      
+     def sign_in_click(self, **event_args):
+    """This method is called when the link is clicked"""
+    user = anvil.users.get_user()
+    if user:
+      logout = confirm('Would you like to logout?')
+      if logout:
+        anvil.users.logout()
+        self.go_to_home()
+        
+    else:
+      anvil.users.login_with_form()
+    self.change_sign_in()
+    
+    # what this line of code is essentially doing is it gets the users information, and if the user is logged in, a built in function called confirm is called that will ask the user if they would like to logout or not.
+    
+    # if yes, the user will be logged out, and the method, that clears the content_panel, and adds in home is called. as well as the sign in button will come back. 
+    
+    # If the user is not logged in, then it will just be asked to sign up.
+    
+    
+    CART BUTTON ONLY SHOWING UP IF WE ARE SIGNED IN
+     
+     
+     - creating a new method that checks if user is signed in or not. If they are not, the cart button will not show up.
+     
+     - This method is called in the sign in method, as that method will check if the user is signed in or not, therefore calling our 'change_cart' method there makes the most sense, as we could use the information to determine if the cart button will be shown or not.
+     
+     # code
+     
+     def change_sign_in(self):
+    user = anvil.users.get_user()
+    if user:
+      self.sign_in.text = user["email"]
+    else:
+      self.sign_in.text = "sign In"
+    self.change_cart_sign()
+  
+  def change_cart_sign(self):
+    self.cart.visible = anvil.users.get_user() != None
+    
+    
+    DATA BASE OF THE PRODUCTS
+    
+    - will hold all the information related to the products i am selling.
+    
+    
+    
+    
+    
+    
+     
      
     
     
