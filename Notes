@@ -143,6 +143,81 @@ VIEW CLOTHES PAGE
     
     - super simple with anvil
     
+    - Will be adding users application, that will allows users to sign in with many different things. Allow us to customize which type of passwords are allowed, as well as customize registration.
+    
+    # allows users to login
+    # will be added into the propertys of the sign in button on the base page
+   
+   anvil.users.login_with_form()
+    
+    # calling this function will give us access to everything in the user table.
+   
+    anvil.users.get_user()
+    
+   
+   
+   
+   
+   
+   
+   MAKING SIGN IN BUTTON GO AWAY
+    
+    -change of text of the sign in button based on if were signed in or not.
+    
+    -creating a new method to do this
+    
+    -this method will also allow us to log out.
+    
+    # our method
+    def change_sign_in(self):
+   
+   # will give us the information on the users table, which we can then use to determine if we need to change the text or not, or wether the user can log out or not.
+      user = anvil.users.get_user()
+      
+      
+      # if the user is sighned in then, we run these lines of code.
+     if user:
+         
+         
+        # in anvil we can acces the stuff from our data tables by using a dictionary key, like "user["email"]".
+        email = user["email"]
+        
+        
+        # changing the text of the button
+        self.sign_in.text = email
+    
+    
+    
+    
+    
+    # if not signed in then the text does not change.
+    else:
+        self.sign_in.text = "sign In"
+        
+      
+    - For this method to work we need to call it, withtin the class.
+    
+    - this method should also be called after clicking the sign in button.
+    
+    
+    
+     LOGGING OUT
+     
+     - built in function called confirm that opens up dialouge that asks user if they would like to logout.
+     
+     - also created a new function that clears the content_panel and adds in the home page (will be very usefull)
+     
+     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
