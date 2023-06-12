@@ -289,8 +289,24 @@ VIEW CLOTHES PAGE
      
      -create a new file that we will use as a custom property, where we will be adding in the information to our layout for each individaul product.
      
+     -self.content_panel.add_component(ClothingItem(name = "Shorts", ) this line of code is essentailly importing the course item ( in this case were imprting the shorts.)
      
     
+    SETTING THE DIFFERENT ELEMENTS TO OUR LAYOUT
+    
+    - to fo this we need to go into out code if ourlayout and intilize our propertys. Example: 
+    
+    # code
+    
+     def __init__(self, name, price, description,  **properties):
+    # Set Form properties and Data Bindings.
+    self.init_components(**properties)
+    self.name.text = name
+    self.description.text = description
+    self.price.text = price
+    
+    
+    - after initializing these propertys we can then add the propwertys withtin the Clothing item template, and what it will do is intilize the propertys into my layout. this will be done for the both the pants and the shorts.
     
     
     
