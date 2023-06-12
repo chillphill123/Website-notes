@@ -251,6 +251,45 @@ VIEW CLOTHES PAGE
     DATA BASE OF THE PRODUCTS
     
     - will hold all the information related to the products i am selling.
+    -will adding feilds in the user table. The feild we will be adding is 'Clothes bought"
+    - want to have a data base the stores the clothes. Any information related the brought being sold will be added in their (image, description, type, etc).
+    -
+    
+    
+    
+    BACK END CODE
+    
+    -how we wil be accesing our data tables.
+    - doing this in server, as we would not want the users to be able to modify my website.
+    - going to set up routes that will be called when needed. Will be needed when we need to the information of the clothes, the price of the specifc clothing item, and the information of one product.  
+    
+    #
+    
+    - @anvil.server.callable allows our routes to be called with anvil.server.call()
+    
+    - client_readable(), what this does is it allows u to return a readable view to the front end of your webstite. It also does not allow for users to change the thing returned.
+    
+    -client_writeable allows clilents to modify things. Example: changing their name.
+    
+    - loading our courses into the clothes file from the data base.
+    
+    # code
+    
+    def insert_clothes(self):
+    clothes = anvil.server.call("get_clothes_details").search()
+    
+    - .search() allows us to view the information.
+    
+    - parameter is in string format.
+    
+    - self.insert_clothes(), will be added into the clothes class, as we want that method to run the second the clothes page is ran.
+    
+    
+     CREATING LAYOUT FOR COURSES
+     
+     -create a new file that we will use as a custom property, where we will be adding in the information to our layout for each individaul product.
+     
+     
     
     
     
