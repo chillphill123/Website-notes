@@ -311,11 +311,17 @@ VIEW CLOTHES PAGE
     
     
     
-    
+    # ran into issue with loading the text into layout, as I was not filling in all the paramteres in my intilization class.
      
      
+    # syntax error. bad input is giving me a hard time.
     
     
+    ran into a long trouble with naming and learning how to connect my data table and propertys to my website.
+    
+    # heres what I learned
+    
+    in iorder to do this we need ot create a data table holding the information of the products we will be selling. We then need to make another file that will have custom propertys filled in based on the data table of our producrs. (essentailly creating the layout for which we want our propertys to go on and look).
     
     
     
