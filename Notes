@@ -355,11 +355,26 @@ VIEW CLOTHES PAGE
     
     - in our data, we will be storing the name of the clothes we boought (check if
     
+    - token, info = stripe.checkout.get_token(amount=self.i["price"], currency="CAD", title= self.i["name"], description=self.i["description"])
+    
+    - the line above is the implementaion of stripe and essentially what its doing is storing the information written into something called "token"
     
     
+    alert() is anvil is a pop up dialogue that the user will see.
     
     
+    try:
+      anvil.server.call("charge_user", token, user["email"], self.i["name"])
+      alert("grongratulations")
+    except:
+      alert("error try again")
+    #  try in anvil trys the code, and if the lines dont meet the requirements, the the code will go to the except  line of code.
     
+    -
+    
+    SETTING UP THE CHARGE USER API
+    
+    - 
     
     
     
