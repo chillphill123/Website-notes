@@ -323,6 +323,37 @@ VIEW CLOTHES PAGE
     
     in iorder to do this we need ot create a data table holding the information of the products we will be selling. We then need to make another file that will have custom propertys filled in based on the data table of our producrs. (essentailly creating the layout for which we want our propertys to go on and look).
     
+    # for i in clothes:
+      c = ClothingItem(name = i["name"], button_text = i["price"], description = i["description"], image = i["image"], button_callback = None)
+      self.content_panel.add_component(c)
+      
+      # iterating through our clothe table and assighning each property to the layout, using i.
+      
+      
+      
+      
+     MAKING THEM ONE SINGLE ROW
+     
+     - gonna create a grid panel where we will be adding the clothe into, and then rendring the panel in the main conten_panel.
+      
+      
+    - GridPanel() is a built in grid with 12 coloums, 
+    
+    CREATING CHECKOUT PAGE
+    
+    - will be passing through the propertys, like with the products.
+    
+    
+    - two coloumn panels ( one with the information of the piece of clothing u are buying), and the other having the price and rating .
+    
+    - clocking a piece of clothing will bring us to to checkout.
+    
+    
+    INTEGRATING STRIPE/BUY BUTTON
+    
+    - is what allows for the actualy payments to be made.
+    
+    - in our data, we will be storing the name of the clothes we boought (check if
     
     
     
