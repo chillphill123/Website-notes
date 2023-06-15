@@ -390,6 +390,7 @@ VIEW CLOTHES PAGE
     # assighing our propertys of our layout to the data from our clothes table, and then we do these for every product , as we dont need 
     
     
+    .get_user() gets the users information.
     
     
    
