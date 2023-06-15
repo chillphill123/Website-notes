@@ -43,6 +43,8 @@ BASE PAGE
 
 - content_panel is where the main content of our webisite will be
 
+-where we will be creating the layout for our banner and creating buttons/links to go to differnt pages in our website that will be rendered within the home page.
+
 
 
 
@@ -375,6 +377,17 @@ VIEW CLOTHES PAGE
     SETTING UP THE CHARGE USER API
     
     - 
+    
+    LAST MINUTE NOTES
+    
+    - confirm() this a key function in anvil that return true if user clicks 'ok'.
+    
+    for j, i in enumerate(clothes):
+      c = ClothingItem(name = i["name"], button_text = i["price"], description = i["description"], image = i["image"], button_callback=self.render_checkout)
+      clothes_panel.add_component(c, row=str(j//2), width_xs=6)
+    self.content_panel.add_component(clothes_panel)
+    
+    # assighing our propertys of our layout to the data from our clothes table, and then we do these for every product , as we dont need 
     
     
     
